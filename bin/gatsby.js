@@ -25,6 +25,7 @@ if (verDigit < 0.12) {
 var cwd = sysPath.resolve('.')
 var cliFile = sysPath.join('dist', 'bin', 'cli.js')
 var localPath = sysPath.join(cwd, 'node_modules', 'gatsby', cliFile)
+console.log("Client file:", cliFile, ", local path:", localPath)
 
 var loadGatsby = function (path) {
   require(path)
